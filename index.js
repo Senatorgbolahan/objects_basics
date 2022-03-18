@@ -1,6 +1,20 @@
 // Import stylesheets
 import './style.css';
 
-// Write Javascript code!
-const appDiv = document.getElementById('app');
-appDiv.innerHTML = `<h1>JS Starter</h1>`;
+// object creation
+const details = { 
+  name: 'John',
+  surname: 'Doe',
+  age: 20
+};
+console.log(details); // display object 
+
+const person = {
+  name: 'Akinlade',
+  age: 30,
+  // using function as a value
+  greet: function() { console.log('hello') }
+}
+
+person.greet();
+console.log(person.age)
